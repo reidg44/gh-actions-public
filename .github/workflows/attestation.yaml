@@ -6,9 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
-      contents: read
       attestations: write
+      contents: read
+      id-token: write
+      packages: write
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
