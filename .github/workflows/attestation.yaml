@@ -23,9 +23,9 @@ jobs:
         uses: actions/checkout@v4
       - name: SetUpDockerBuildx
         uses: docker/setup-buildx-action@v3
-        with:
-          buildkitd-config: buildkitd.toml
-          # buildkitd-flags: '--debug'
+        # with:
+        #   buildkitd-config: buildkitd.toml
+        #   buildkitd-flags: '--debug'
       - uses: docker/build-push-action@v5
         name: BuildAndPushDockerImage
         id: build
