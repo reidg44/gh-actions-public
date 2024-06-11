@@ -27,7 +27,7 @@ jobs:
         name: BuildAndPushDockerImage
         id: build
         with:
-          push: false
+          push: true
           file: python-example/Dockerfile
           context: ./python-example
           cache-from: type=gha
